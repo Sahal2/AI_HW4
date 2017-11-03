@@ -1,0 +1,41 @@
+with open(traindat, 'r') as fd:
+    for category in id:
+        id_wrds = (category, word)
+    print(id_wrds)
+
+
+def read_wrd:
+    for line in fd.readlines():
+        id, *word = line.split()
+    return id, word
+
+
+
+
+    try:
+        list_of_categories_and_their_P[category].append(list_of_categories_appearing_in_training_data.count(category))
+    except KeyError:
+        list_of_categories_and_their_P[category]list_of_categories_appearing_in_training_data.count(category)
+
+    # def count_wrd(wrd,)
+    #
+    #
+    # def add_prb(dictionary,item,id):
+    #     try:
+    #         dictionary[id].append(item)
+    #     except KeyError:
+    #         dictionary[id] = item
+
+
+
+    if category not in list_of_categories_and_their_P:
+        list_of_categories_and_their_P[category]=list_of_categories_appearing_in_training_data.count(category)
+    else:
+        list_of_categories_and_their_P[[category],++1]
+    return list_of_categories_and_their_P
+
+
+listy.append(id)
+        print(list(set(listy)))
+        # for category in id:
+        #     print(category)
