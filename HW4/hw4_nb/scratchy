@@ -38,4 +38,120 @@ def read_wrd:
 listy.append(id)
         print(list(set(listy)))
         # for category in id:
+<<<<<<< HEAD
         #     print(category)
+=======
+        #     print(category)
+
+
+
+# try:
+            
+#         except KeyError:
+#             dictionary[id] = item
+
+
+#
+# def calc_prob(x,y):
+#     prob=x/y
+#     return prob
+
+
+
+total_instances_of_each_word.append(one_word)
+        total_instances_of_that_word = [one_word, wrd.count(one_word)]
+        total_instances_of_each_word.append(total_instances_of_that_word)
+
+
+
+
+
+
+IMPORTANT: 
+    # print(Pvj)
+
+        #print(list_of_categories_and_their_P)
+            # calc_prob(count_wrds(word))
+
+# def calc_Pvj(category):
+#     list_of_categories_appearing_in_training_data.append(category)
+#     total_number_of_category_instances = len(list_of_categories_appearing_in_training_data)
+#     list_of_categories_and_their_P[category] = list_of_categories_appearing_in_training_data.count(category)
+#     for category in list_of_categories_and_their_P:
+#         Pvj[category] = list_of_categories_and_their_P[category] / total_number_of_category_instances
+#     return Pvj
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import sys
+from copy import deepcopy
+dict = {}
+Pvj = {}
+listy = []
+total_instances_of_each_word = []
+probability_of_each_word_given_cateogry = {}
+list_of_categories_and_their_P = {}
+list_of_categories_appearing_in_training_data = []
+def learn(traindat):
+    '''Load data for training; adding to
+    dictionary of classes and counting words.'''
+    with open(traindat,'r') as fd:
+        for line in fd.readlines():
+            id, *word = line.split()
+            count_wrds_in_category(id,word,uniq_wrd(word))
+
+
+
+def count_wrds_in_category(category,wrd,unique_wrd):
+    total_word_count = len(wrd)
+    for one_word in unique_wrd[1]:
+        probability = wrd.count(one_word)/total_word_count
+        probability_of_each_word_given_cateogry[category] = probability
+    return 
+
+def update_dictionary(dict,new_values)
+
+
+    
+def uniq_wrd(wrd):
+    list_of_all_unique_words_in_line = list(set(wrd))
+    return list_of_all_unique_words_in_line 
+
+
+
+
+learn("/Users/sahalfhussain/Desktop/AI_HW4/HW4/hw4_nb/testy.txt")
+
+
+
+
+
+
+
+
+
+def add_wrd_by_category(category,wrds):
+    for wrd in wrds:
+        try: 
+            wrd_instance_by_category[[wrd_and_their_probailities_by_category[wrd]]] += 1
+        except KeyError:
+            wrd_instance_by_category[[wrd_and_their_probailities_by_category[wrd]]] = 1
+    return wrd_instance_by_category
+
+
+except KeyError:
+            wrd_and_their_probailities_by_category[wrd] 
+            wrd_instance_by_category[wrd] = [wrd_and_their_probailities_by_category[]
+>>>>>>> function to calculate global instance and category instance
